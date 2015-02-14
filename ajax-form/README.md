@@ -2,5 +2,7 @@ This form uses a Foundation 5 reveal modal. It uses javascript/jQuery to interce
 
 Problem with the tutorial version above is that any files requested from file upload fields are not sent through with the form submission.  A way around this is to use the FormData javascript object: https://developer.mozilla.org/en-US/docs/Web/Guide/Using_FormData_Objects
 
+The template uses an animated loading GIF that appears once the submit button is clicked.
+
 The javascript is client-side so it's not an extension. Just load it as with other js files in the layout template :)
 NOTE: FormData is not available for IE9 and below.
