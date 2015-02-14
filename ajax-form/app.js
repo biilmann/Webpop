@@ -4,7 +4,6 @@ $(function() {
   $(".form-modal").click(function(){
     $("#upload-form")[0].reset();
     $("#feedback-container").empty();
-    $("#send-form").show();
   });
   
   
@@ -14,6 +13,9 @@ $(function() {
     
     // Show the animated loading icon
     $("#loader-icon").show();
+    
+    // If resending after correcting an error make sure the error message is gone
+    $("#feedback-container").empty();
     
     $form = $(this);
     
@@ -30,7 +32,6 @@ $(function() {
         // $form[0].reset();
         $feedback.fadeIn();
         $("#loader-icon").hide();
-        $("#send-form").hide();
         
       }
     };
